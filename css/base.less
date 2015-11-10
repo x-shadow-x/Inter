@@ -1,0 +1,123 @@
+@import "bootstrap.less";  //TODO:执行此句后，页面就不用再引入bootstrap.css了
+@navbar-height: 50px; //导航栏高度
+@img-base-dir:"../imgs/";//项目中所有图片所在的文件夹
+@logo-margin-top: -11px; //导航栏logo上边距
+@mask-position-top:79%;//大图旁的小图上面的遮罩层初始定位高度
+@transform-time: 500ms; //做渐变动画的时间
+
+body {
+  padding-top:@navbar-height;
+}
+
+//导航栏内容
+.navbar-brand {
+  a {
+    display: inline-block;
+    width: 63px;
+    height: 42px;
+    background: url("../imgs/hdr-spr.png") 0 -512px no-repeat;
+    margin-top: @logo-margin-top;
+  }
+}
+
+//写这个类是因为导航栏里的“查找内容 |”的样式设定在bootstrap源码中不能改~因为会影响到其他的超链接样式不符合~所以这个要自己写
+.navbar-form {
+  .form-control-static {
+    color:#fff;
+    a {
+      color: #fff;
+      &:hover {
+        color: @blue-lighter;
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  .dropdown {
+     > a,
+     &:hover{
+      display: inline-block;
+      width: 140px;
+      height: 50px;
+      background-color: @blue-light !important;
+      color: #fff !important;
+    }
+  }
+}
+
+
+
+//页面主体内容
+.main {
+
+  background-color: @blue-dark;
+  color: #fff;
+  .panel {
+    border:none;
+  }
+  > .container {
+    > .row {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.mask-container {
+  position: relative;
+  overflow: hidden;
+  .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.6);//这里不能用opacity来设置遮罩层的透明~这样会使得上面的字也变得透明~于是设置背景色的透明
+    &:hover {
+      top: 0 !important;
+      -webkit-transform: top @transform-time;
+         -moz-transform: top @transform-time;
+          -ms-transform: top @transform-time;
+           -o-transform: top @transform-time;
+              transform: top @transform-time;
+    }
+  }
+}
+
+.media-body {
+  padding-left: 15px;
+  > ul {
+    height:135px;
+    overflow: auto;
+  }
+  a {
+    color: #fff;
+    line-height: 27px;
+    font-size: 16px;
+    &:hover {
+      color:@blue-lighter;
+    }
+
+  }
+}
+.media-left {
+  border-right: 1px solid @blue-lighter;
+  padding-left: 15px;
+  vertical-align:middle;
+}
+.mask-container {
+  > img {
+    width:100% !important;
+  }
+}
+.panel-body {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+//页脚
+.footer{
+
+}

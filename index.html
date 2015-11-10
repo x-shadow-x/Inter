@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="css/base.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<!--导航栏-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <a href="/content/www/cn/zh/homepage.html"></a>
+            </div>
+        </div>
+        <div id="my-navbar-collapse" class="collapse navbar-collapse">
+            <div class="navbar-left">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">菜单<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">英特尔产品</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">热点话题</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">用户</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">购买</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">产品支持</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">China(简体中文)</a>
+                    </li>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <form class="navbar-form">
+                    <div class="form-group">
+                        <p class="form-control-static"><a href="#">查找内容</a> | </p>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="搜索..."/>
+                        <spa class="glyphicon glyphicon-search form-control-feedback"></spa>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!--导航栏 end-->
+
+<!--页面主体-->
+<div class="main">
+    <div class="container">
+        <h1>欢迎来到英特尔®</h1>
+
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <!--中等屏幕下给了8个列宽~但不能保证放的图片刚好~所以给图片加一个img-responsive类让它自适应-->
+                <img src="imgs/intel.web.864.486.1.jpg" alt="大图1" class="img-responsive"/>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <div class="mask-container"><!--mask-container为css样式类-->
+                            <img src="imgs/intel.web.368.207.1.jpg" alt="大图1旁边的小图1"/>
+                            <div class="mask">
+                                <h4>解密2合1电脑<span class="glyphicon glyphicon-circle-arrow-up pull-right"></span>></h4>
+                            </div><!--mask为css样式类-->
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <!--col列中的内容里太靠近边缘时可以在外面套一层面板~但是面板默认是有边框的~如果不要就定制吧-->
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <!--这里不能使用图片的响应式布局类~因为media-left没有指定宽和高~添加响应图片后其宽高是岁父元素的~这样图片就没啦-->
+                                        <img src="imgs/intel.web.81.108.png" alt="" class="media-object"/>
+                                    </div>
+                                    <div class="media-body">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">英特尔® 酷睿™ M 处理器</a></li>
+                                            <li><a href="#">"才貌"双全的家用一体机</a></li>
+                                            <li><a href="#">英特尔® 凌动™ 处理器</a></li>
+                                            <li><a href="#">2015 台北国际电脑展 </a></li>
+                                            <li><a href="#">《风暴英雄》游戏道具兑换</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-xs-12 col-md-push-4">
+                <!--中等屏幕下给了8个列宽~但不能保证放的图片刚好~所以给图片加一个img-responsive类让它自适应-->
+                <img src="imgs/intel.web.864.486.2.jpg" alt="大图2" class="img-responsive"/>
+            </div>
+            <div class="col-md-4 col-xs-12 col-md-pull-8">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <!--col列中的内容里太靠近边缘时可以在外面套一层面板~但是面板默认是有边框的~如果不要就定制吧-->
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <!--<div class="media-left">
+                                        <img src="imgs/intel.web.81.108.png" alt="" class="media-object"/>
+                                    </div>-->
+                                    <div class="media-body">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">升级办公利器</a></li>
+                                            <li><a href="#">数据中心芯可能</a></li>
+                                            <li><a href="#">大数据</a></li>
+                                            <li><a href="#">云计算和云服务</a></li>
+                                            <li><a href="#">案例中心</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <div class="mask-container"><!--mask-container为css样式类-->
+                            <img src="imgs/intel.web.368.207.2.jpg" alt="大图2旁边的小图2" />
+                            <div class="mask">
+                                <h4>马上订阅英特尔商用中心精选资源<span class="glyphicon glyphicon-circle-arrow-up pull-right"></span></h4>
+                            </div><!--mask为css样式类-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <!--中等屏幕下给了8个列宽~但不能保证放的图片刚好~所以给图片加一个img-responsive类让它自适应-->
+                <img src="imgs/intel.web.864.486.3.jpg" alt="大图3" class="img-responsive"/>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <div class="mask-container"><!--mask-container为css样式类-->
+                            <img src="imgs/intel.web.368.207.3.jpg" alt="大图3旁边的小图3"/>
+                            <div class="mask">
+                                <h4>英特尔产品中心<span class="glyphicon glyphicon-circle-arrow-up pull-right"></span></h4>
+                            </div><!--mask为css样式类-->
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <!--col列中的内容里太靠近边缘时可以在外面套一层面板~但是面板默认是有边框的~如果不要就定制吧-->
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <!--<div class="media-left">
+                                        <img src="imgs/intel.web.81.108.png" alt="" class="media-object"/>
+                                    </div>-->
+                                    <div class="media-body">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">英特尔® 至强™ 处理器 D 产品家族</a></li>
+                                            <li><a href="#">神奇的实感技术</a></li>
+                                            <li><a href="#">英特尔社交网络</a></li>
+                                            <li><a href="#">英特尔视频专区</a></li>
+                                            <li><a href="#">英特尔新闻发布室</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面主体 end-->
+
+<!--footer-->
+<div class="footer"><!--footer样式类就是css的样式类~不是bootstrap提供的-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>关于英特尔</h4>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>关于英特尔</h4>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>关于英特尔</h4>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>关于英特尔</h4>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                            <li>
+                                <a href="#">公司信息</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+
+</script>
+</body>
+</html>
